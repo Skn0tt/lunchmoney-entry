@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunchmoney Entry Plane</title>
+
+    <link rel="stylesheet" href="./node_modules/water.css/out/water.min.css" />
+  </head>
+  <body>
+    <h1>Lunchmoney Entry</h1>
+
+    <form id="entry">
+      <label style="display: block">
+        Payee
+        <input placeholder="Jenny's Pizza Place" name="payee" required />
+      </label>
+      <label style="display: block">
+        Category
+        <select id="categories" name="category"></select>
+      </label>
+      <label style="display: block">
+        Account
+        <select id="accounts" name="account"></select>
+      </label>
+      <label style="display: block">
+        Amount
+        <input
+          name="amount"
+          placeholder="$1"
+          type="number"
+          min="0"
+          step="any"
+          required
+        />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+      <a href="/settings">Settings</a>
+
+      <p>
+        Built with ❤️ by <a href="https://twitter.com/skn0tt">@skn0tt</a>.
+        <a href="https://github.com/skn0tt/lunchmoney-entry">Source Code</a>
+      </p>
+    </footer>
+
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

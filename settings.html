@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="./node_modules/water.css/out/water.css" />
+  </head>
+  <body>
+    <a href="/"> < Back </a>
+    <h1>Settings</h1>
+
+    <h2>Access Token</h2>
+    <details>
+      <summary>Why is this needed?</summary>
+      <p>
+        <code>lunchmoney-entry</code> needs your access token to access the
+        Lunchmoney API on your behalf. It's only ever used for creating new
+        entries, and the token is never sent anywhere but the Lunchmoney API!
+        Still, you shouldn't believe my words.
+        <a href="https://github.com/skn0tt/lunchmoney-entry"
+          >Check the source code to be sure!</a
+        >
+      </p>
+    </details>
+
+    <form id="access-token-form">
+      <input
+        id="access-token-input"
+        required
+        style="display: inline; width: 80%"
+        name="access-token"
+        placeholder="e52ad4735e531883ce9f69d2416..."
+      />
+      <button style="float: right">Udpate</button>
+    </form>
+
+    <h2>Updates</h2>
+
+    <button id="refresh">Refresh Categories & Accounts</button>
+
+    <script type="module" src="/settings.js"></script>
+  </body>
+</html>
