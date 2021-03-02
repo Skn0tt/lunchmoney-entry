@@ -4,7 +4,6 @@
     "build": "snowpack build"
   },
   "dependencies": {
-    "snowpack": "^3.0.13",
-    "water.css": "^2.0.0"
+    "snowpack": "^3.0.13"
   }
 }
